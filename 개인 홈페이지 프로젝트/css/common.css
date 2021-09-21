@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Merriweather', 'Gowun Dodum', '맑은 고딕', sans-serif;
+    font-size: 13px;
+    color: #333;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+/* 기본 class */
+.clearFix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.w1280{
+    width: 1280px;
+    margin: 0 auto;
+}
+/* layout */
+
+header{
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+.logo{
+    float: left;
+    font-size: 70px;
+    font-weight: bold;
+}
+.mainNav{
+    float: right;
+    margin-top: 45px;
+}
+.mainNav ul li{
+    float: left;
+}
+.mainNav ul li a{
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+}
+.mainNav ul li a:hover{
+    font-weight: bold;
+}
+/* landing */
+.landing{
+    height: 700px;
+    position: relative;
+    min-width: 1280px;
+    
+}
+.land{
+    height: 700px;
+    background: url(../images/배경.jpg) ;
+    background-size:cover;
+}
+.land div{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 120px;
+    top: 100px;
+}
+.landing div span{
+    position: absolute;
+    font-size: 40px;
+    right: 50px;
+    top: 170px;
+}
+
+/* section1 */
+.intro{
+    padding: 100px 0;
+ 
+}
+.intro > a{
+    display: block;
+    text-align: center;
+}
+.intro a img{
+    width: 300px;
+    border-radius: 375px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px #aaa;
+}
+.intro h2{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+.intro > span{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+
+.intro .me ul li{
+    float: left;
+    width: 390px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.intro .me ul li:nth-child(3){
+    margin-right: 0;
+}
+
+.intro .me ul li:nth-child(3) span:nth-of-type(1){
+    margin-left: 100px;
+}
+.intro .me ul li span{
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+.intro .me ul li span:nth-of-type(1){
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 150px;
+
+}
+.intro .me ul li span:nth-of-type(2){
+    width: 200px;
+    font-size: 20px;
+}
+
+/* section2 */
+.interest{
+    padding: 150px 0;
+
+    
+}
+.interest ul li{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.interest ul li:last-child{
+    margin-right: 0;
+}
+.interest ul li a{
+    width: 305px;
+    height: 431px;
+    display: block;
+}
+.interest ul li a span:nth-of-type(2){
+    position: absolute;
+    width: 305px;
+    height: 431px;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    text-align: center;
+    line-height: 431px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s;
+}
+.interest ul li a:hover span{
+    opacity: 1;
+}
+/* 비디오 링크 페이지 */
+.post{
+    padding: 100px 0;  
+}
+.post h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.post div{
+    margin-bottom: 50px;
+}
+.post div span{
+    display: block;
+    margin-left: 290px;
+    line-height: 180%;
+
+
+}
+
+/* section3 */
+.map{
+    padding: 100px 0;
+    text-align: center;
+    height: 700px;
+
+}
+.map > div{
+    float: left;
+}
+
+.map > div .mapheader1,
+.map > div .mapheader2{
+    font-size: 25px;
+    width: 435px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.map > div .mapbody1,
+.map > div .mapbody2{
+    font-size: 20px;
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.map > div .mappic img{
+    width: 330px;
+    border-radius: 375px;
+    margin-top: 165px;
+}
+
+
+
+/*join*/ /*width, heigth 있을시 margin을 주면 0(위아래)
+          auto는 가운데 정렬이 됨*/
+.join{
+    padding: 100px;
+}
+
+.joinForm {
+    margin: 0 auto; 
+    width:400px;
+    height:700px;
+    padding: 20px, 20px;
+    background-color:#FFFFFF;
+    text-align:center;
+  }
+  
+  .joinForm h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+  }
+  
+  .textForm {
+    border-bottom: 2px solid #adadad;
+    margin: 30px;
+    padding: 10px 10px;
+  }
+  
+  
+  .id {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .pw {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .name {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .email {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .nickname {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .cellphoneNo {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+
+  .btn {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: #333;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+  }
+  
+  .btn:hover {
+    background: #ccc;
+    color: #333;
+  }
+
+legend {
+    float: left;
+    font-size: 16px;
+    font-family: "맑은 고딕";
+    float: left;
+    color: #777;
+}
+
+.gender{
+    float: right;
+}
+
+label{
+    font-size: 16px;
+    font-family: "맑은 고딕";
+    margin-left: 3px;
+    margin-right: 50px;
+}
+label:nth-of-type(2){
+    margin-right: 0;
+}
+/* footer */
+footer{
+    padding: 50px 0;
+    background-color: #333;
+}
+address{
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+}
+footer span{
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+        <!-- 웹폰트 링크 -->
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- 웹아이콘 링크 -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- css 링크 -->
+        <link rel="stylesheet" href="css/common.css" />
+        <script src="./js/join.js"></script>
+</head>
+<body>
+    <body>
+        <div class="wrap">
+            <header class="clearFix">
+                <div class="w1280">
+                    <h1 class="logo"><a href="index.html">OH!</a></h1>
+                    <nav class="mainNav">
+                        <ul class="clearFix">
+                            <li><a href="#intro">Introduce</a></li>
+                            <li><a href="#interest">Interest</a></li>
+                            <li><a href="#map">Roadmap</a></li>
+                            <li><a href="join.html">Join</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="join w1280">
+                <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
+                                                                                               
+                    <h2>회원가입</h2>
+                    <div class="textForm">
+                      <input name="loginId" type="text" class="id" placeholder="아이디">
+                      </input>
+                    </div>
+                    <div class="textForm">
+                      <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+                    </div>
+                     <div class="textForm">
+                      <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="textForm">
+                      <input name="name" type="text" class="name" placeholder="이름">
+                    </div>
+                     <div class="textForm">
+                      <input name="email" type="email" class="email" placeholder="이메일">
+                    </div>
+                    <div class="textForm">
+                      <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+                    </div>
+                    <div class="textForm">
+                      <input name="cellphoneNo" type="number" class="cellphoneNo" placeholder="전화번호">
+                    </div>
+                    <div class="clearFix textForm"> <!-- clearFix 클래스1 / gender 클래스 2 총 2개의 클래스-->
+                        <legend>성별</legend>
+                        <div class="gender">
+                            <input name="gender" type="radio" class="gender0" value="남">
+                            <label for="gender0">남</label>
+                            <input name="gender" type="radio" class="gender1" value="여">
+                            <label for="gender1">여</label>
+                        </div>
+                    </div>    
+                    <input type="button" class="btn" onclick="tryJoin()" value="J O I N"/>
+                  </form>
+            </div>
+            
+            <footer>
+                <div class="w1280">
+                    <div><span>봐주셔서 감사합니다.</span></div>
+                    <address>© 2021. Oh Chae A. All rights reserved.</address>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
