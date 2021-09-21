@@ -190,8 +190,14 @@ header{
     margin-bottom: 50px;
 }
 .post div{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
+.post h2 {
+    display: block;
+    margin-left: 290px;
+    line-height: 180%;
+}
+
 .post div span{
     display: block;
     margin-left: 290px;
