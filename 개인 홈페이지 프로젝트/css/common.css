@@ -5,7 +5,7 @@
     margin: 0;
 }
 body{
-    font-family: 'Merriweather', 'Gowun Dodum', '맑은 고딕', sans-serif;
+    font-family: 'Merriweather', 'Gowun Dodum';
     font-size: 13px;
     color: #333;
     background-color: #fff;
@@ -85,7 +85,7 @@ header{
     top: 170px;
     transform: translateX(-370px);
     transition-delay: .1s;
-    opacity: .1;
+    opacity: 0;
     transition: .6s;
 }
 .landing:hover div span{
@@ -156,10 +156,13 @@ header{
     width: 200px;
     font-size: 20px;
 }
+.intro .me ul li:last-child span:nth-of-type(1){
+    margin-left: 105px;
+}
 
 /* section2 */
 .interest{
-    padding: 150px 0;
+    padding: 100px 0;
 
     
 }
@@ -216,16 +219,14 @@ header{
     margin-left: 290px;
     line-height: 180%;
 
-
 }
 
 /* section3 */
 .map{
-    /*padding: 100px 0;*/
+    padding: 100px 0;
     text-align: center;
-    height: 700px;
-
 }
+
 .map > div{
     float: left;
 }
