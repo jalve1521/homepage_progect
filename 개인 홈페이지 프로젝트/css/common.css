@@ -238,10 +238,9 @@ header{
     line-height: 50px;
     margin-bottom: 50px;
     margin-top: 50px;
-}
-
-.map > div > div {
-    transition: top 5s cubic-bezier(0, 0, 1, 1);
+    background-color: rgb(197, 162, 118);
+    color: #FFFFFF;
+    border-radius: 20px;
 }
 
 .map > div .mapbody1,
@@ -256,6 +255,7 @@ header{
     margin-bottom: 40px;
     border-radius: 30px;
 }
+
 .map > div .mappic img{
     width: 300px;
     border-radius: 375px;
