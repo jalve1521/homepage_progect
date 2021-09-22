@@ -10,7 +10,8 @@
     <!-- 웹아이콘 링크 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- css 링크 -->
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <script src="../js/join.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -34,7 +35,7 @@
     </div>
     <div class="con w1280">
         <section class="intro" id="intro">
-            <a href="#"><img src="images/얼굴사진.jpg" alt="얼굴사진" /></a>
+            <a href="#"><img src="../images/얼굴사진.jpg" alt="얼굴사진" /></a>
             <h2>OH CHAE A</h2>
             <span>당신이 멈추지 않는 한 아무리 느리게 간다 해도 큰 문제가 되지 않는다.</span>
             <div class="me">
@@ -51,15 +52,15 @@
         </section>
         <section class="interest" id="interest">
             <ul class="clearFix">
-                <li class="post1"><a href="post.html"><span><img src="images/인턴.png" alt="인턴 포스터" /></span><span>자세히 보기</span></a></li>
-                <li class="post2"><a href="post2.html"><span><img src="images/위플래쉬.png" alt="위플래쉬" /></span><span>자세히 보기</span></a></li>
-                <li class="post3"><a href="post3.html"><span><img src="images/뷰티인사이드.png" alt="뷰티인사이드" /></span><span>자세히 보기</span></a></li>
-                <li class="post4"><a href="post4.html"><span><img src="images/노트북.png" alt="노트북" /></span><span>자세히 보기</span></a></li>
+                <li class="post1"><a href="post.html"><span><img src="../images/인턴.png" alt="인턴 포스터" /></span><span>자세히 보기</span></a></li>
+                <li class="post2"><a href="post2.html"><span><img src="../images/위플래쉬.png" alt="위플래쉬" /></span><span>자세히 보기</span></a></li>
+                <li class="post3"><a href="post3.html"><span><img src="../images/뷰티인사이드.png" alt="뷰티인사이드" /></span><span>자세히 보기</span></a></li>
+                <li class="post4"><a href="post4.html"><span><img src="../images/노트북.png" alt="노트북" /></span><span>자세히 보기</span></a></li>
             </ul>
         </section>
         <section class="map w1280 clearFix" id="map">
             <div style= "width: 435px; height: 700px;">
-                <div class="mapheader1" style="background-color: rgb(197, 162, 118); color: #FFFFFF" onclick="leftSectionClick()"><strong>어떤 개발자가 되고 싶어요?</strong></div>
+                <div class="mapheader1" onclick="leftSectionClick()"><strong>어떤 개발자가 되고 싶어요?</strong></div>
                 <div id="leftSection" style="left: -200px; opacity: 0; cursor: pointer; position:relative; transition: left 0.5s cubic-bezier(0.0, 0.5, 0.5, 1.0); " onclick="hi(this)">
                     <div class="mapbody1">웹 개발자[back-end] / 앱 개발자</div>
                     <div class="mapbody1">주어진 업무를 해결할 수 있는 개발자</div>
@@ -70,11 +71,11 @@
             </div>
             <div style="width: 410px; height: 700px;">
                 <div id="mappic" class="mappic">
-                    <a href="#"><img src="images/얼굴사진.jpg" alt="증명사진" /></a>
+                    <a href="#"><img src="../images/얼굴사진.jpg" alt="증명사진" /></a>
                 </div>
             </div>
             <div style="width: 435px; height: 700px;">
-                <div class="mapheader2" style="background-color: rgb(197, 162, 118); color: #FFFFFF" onclick="rightSectionClick()" ><strong>원하는 개발자가 되기위한 studylist</strong></div>
+                <div class="mapheader2" onclick="rightSectionClick()" ><strong>원하는 개발자가 되기위한 studylist</strong></div>
                 <div id="rightSection" style="left: 200px; opacity: 0; cursor: pointer; position:relative; transition: left 0.5s cubic-bezier(0.0, 0.5, 0.5, 1.0); ">
                     <div class="mapbody2" >SpringBoot</div>
                     <div class="mapbody2" >mariaDB</div>
@@ -95,20 +96,6 @@
     </footer>
 </div>
 
-
-
-
 </body>
-<script>
-    function leftSectionClick(){
-        var leftSection = document.getElementById("leftSection");
-        leftSection.style.left = '0px';
-        leftSection.style.opacity = '1';
-    }
-    function rightSectionClick(){
-        var rightSection = document.getElementById("rightSection");
-        rightSection.style.left = '0px';
-        rightSection.style.opacity = '1';
-    }
-</script>
+
 </html>
