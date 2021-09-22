@@ -1,14 +1,11 @@
-function tryJoin(object){
+function tryJoin(object) {
     console.log(document.getElementById("id"))
     // 회원가입이 완료 되었다는 얼럿창을 띄운다.
     alert(`회원가입이 완료되었습니다.`)
     location.href = "./index.html"
-
-
 }
 
-
-document.joinForm.onsubmit = function(){
+document.joinForm.onsubmit = function () {
     console.log("찍히는지 테스트")
     var userId = document.getElementById("userId");
     var pwd = document.getElementById("pwd");
@@ -46,32 +43,32 @@ document.joinForm.onsubmit = function(){
 
     var regExpArr = [/^.{8,15}$/, /\d/, /[a-zA-Z]/, /[\*!&]/];
 
-    for(let i = 0; i < regExpArr.length; i++){
-        if(!regExpTest(regExpArr[i], pwd, "비밀번호는 8~15자리 숫자/문자/특수문자를 포함해야합니다.")){
+    for (let i = 0; i < regExpArr.length; i++) {
+        if (!regExpTest(regExpArr[i], pwd, "비밀번호는 8~15자리 숫자/문자/특수문자를 포함해야합니다.")) {
             return false;
         }
     }
 
     //비밀번호일치여부
-    if(!isEqualPwd()){
+    if (!isEqualPwd()) {
         return false;
     }
 
     //3.이름검사
     //한글2글자 이상만 허용. [가-힣] 으로 해도되긴 하지만 자음만(ㄱㄴㄷㄹ)있으면 필터링이 안됨
     var regExp3 = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]{2,}$/;
-    if(!regExpTest(regExp3,userName,"한글2글자이상 입력하세요."))
+    if (!regExpTest(regExp3, userName, "한글2글자이상 입력하세요."))
         return false;
 
     //4.주민번호체크
     var regExp4 = /^\d{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[01])$/;
     var regExp5 = /^[1234]\d{6}$/;
-    if(!regExpTest(regExp4,ssn1,"숫자만 입력하세요."))
+    if (!regExpTest(regExp4, ssn1, "숫자만 입력하세요."))
         return false;
-    if(!regExpTest(regExp5,ssn2,"숫자만 입력하세요."))
+    if (!regExpTest(regExp5, ssn2, "숫자만 입력하세요."))
         return false;
 
-    if(!ssnCheck(ssn1.value,ssn2.value)){
+    if (!ssnCheck(ssn1.value, ssn2.value)) {
         alert("올바른 주민번호가 아닙니다.");
         return false;
     }
@@ -79,7 +76,7 @@ document.joinForm.onsubmit = function(){
     //5.이메일 검사
     // 4글자 이상(\w = [a-zA-Z0-9_], [\w-\.]) @가 나오고
     // 1글자 이상(주소). 글자 가 1~3번 반복됨
-    if(!regExpTest(/^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/, email, "이메일 형식에 어긋납니다."))
+    if (!regExpTest(/^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/, email, "이메일 형식에 어긋납니다."))
         return false;
 
     // /^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/
@@ -99,3 +96,16 @@ document.joinForm.onsubmit = function(){
 
     return true;
 }
+ // map header 및 body 애니메이션 효과
+    function leftSectionClick(){
+    var leftSection = document.getElementById("leftSection");
+    leftSection.style.left = '0px';
+    leftSection.style.opacity = '1';
+}
+    function rightSectionClick(){
+    var rightSection = document.getElementById("rightSection");
+    rightSection.style.left = '0px';
+    rightSection.style.opacity = '1';
+}
+
+
