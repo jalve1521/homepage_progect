@@ -83,9 +83,9 @@ header{
     font-size: 40px;
     right: 50px;
     top: 170px;
-    transform: translateX(-380px);
+    transform: translateX(-370px);
     transition-delay: .1s;
-    opacity: .4;
+    opacity: .1;
     transition: .6s;
 }
 .landing:hover div span{
